@@ -80,7 +80,7 @@ int main()
 
     do
     {
-        printf("Unesi 'K' za kriptiranje ili 'D' za dekriptiranje: ");
+        printf("Unesi 'K' za kriptiranje ili 'D' za dekriptiranje (nije bitno dali je veliko ili malo slovo): ");
         scanf(" %c", &kriptiranjeDekriptiranje);
 
         kriptiranjeDekriptiranje = toupper(kriptiranjeDekriptiranje);
