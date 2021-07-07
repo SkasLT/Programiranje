@@ -8,24 +8,27 @@ void kriptiranje(FILE *datoteka, int kljuc, unsigned char *ime)
     FILE *kriptiraniTekst = fopen(strcat(strtok(ime, ".-"), " - kriptirano.txt"), "w");
 
     char c;
-
+    //testiranje kraja datotetke
     while (!feof(datoteka))
     {
         c = getc(datoteka);
 
+        //izade iz while loopa ako je kraj datoteke
         if (feof(datoteka))
             break;
 
+        //testiranje jeli znak slovo
         if (isalpha(c))
         {
             char kriptiraniZnak;
 
+            //testiranje jeli znak malo slovo
             if (islower(c))
             {
                 kriptiraniZnak = (c + kljuc - 'a') % 26 + 'a';
                 fprintf(kriptiraniTekst, "%c", kriptiraniZnak);
             }
-            else if (isupper(c))
+            else if (isupper(c)) //testiranje jeli znak veliko slovo
             {
                 kriptiraniZnak = (c + kljuc - 'A') % 26 + 'A';
                 fprintf(kriptiraniTekst, "%c", kriptiraniZnak);
@@ -42,29 +45,33 @@ void dekriptiranje(FILE *datoteka, int kljuc, unsigned char *ime)
 
     char c;
 
+    //testiranje kraja datoteke
     while (!feof(datoteka))
     {
         c = getc(datoteka);
 
+        //izade iz while loopa ako je kraj datoteke
         if (feof(datoteka))
             break;
 
+        //testiranje jeli znak slovo
         if (isalpha(c))
         {
             char kriptiraniZnak;
 
+            //testiranje jeli znak malo slovo
             if (islower(c))
             {
                 kriptiraniZnak = 'z' - ('z' - c + kljuc) % 26;
                 fprintf(originalniTekst, "%c", kriptiraniZnak);
             }
-            else if (isupper(c))
+            else if (isupper(c)) //testiranje jeli znak veliko slovo
             {
                 kriptiraniZnak = 'Z' - ('Z' - c + kljuc) % 26;
                 fprintf(originalniTekst, "%c", kriptiraniZnak);
             }
         }
-        else if (c != '\0')
+        else
             fprintf(originalniTekst, "%c", c);
     }
 }
@@ -85,10 +92,10 @@ int main()
 
         kriptiranjeDekriptiranje = toupper(kriptiranjeDekriptiranje);
 
-        if (kriptiranjeDekriptiranje != 'K' && kriptiranjeDekriptiranje != 'D')
+        if (kriptiranjeDekriptiranje != 'K' && kriptiranjeDekriptiranje != 'D') //testiranje jeli uneseni znak K ili D
             printf("Pogresan unos, unesite ponovo!\n");
 
-    } while (kriptiranjeDekriptiranje != 'K' && kriptiranjeDekriptiranje != 'D');
+    } while (kriptiranjeDekriptiranje != 'K' && kriptiranjeDekriptiranje != 'D'); //testiranje jeli uneseni znak K ili D
 
     switch (kriptiranjeDekriptiranje)
     {
@@ -100,18 +107,21 @@ int main()
             scanf(" %[^\n]", imeOriginalneDatoteke);
             originalniTekst = fopen(imeOriginalneDatoteke, "r");
 
+            //testiranje postoji li datoteka koju korisnik zeli kriptirati
             if (originalniTekst == NULL)
                 printf("Uneseno ime datoteke nije valjano. Unesite ponovno.\n");
 
-        } while (originalniTekst == NULL);
+        } while (originalniTekst == NULL); //testiranje postoji li datoteka koju korisnik zeli kriptirati
 
         do
         {
             printf("Unesi kljuc za dekriptiranje: ");
             scanf("%d", &uneseniKljuc);
+
+            //testiranje jeli uneseni kljuc veci od 0
             if (uneseniKljuc < 0)
                 printf("Uneseni kljuc mora biti pozitivni cijeli broj!\n");
-        } while (uneseniKljuc < 0);
+        } while (uneseniKljuc < 0); //testiranje jeli uneseni kljuc veci od 0
 
         kriptiranje(originalniTekst, uneseniKljuc, imeOriginalneDatoteke);
         fclose(originalniTekst);
@@ -125,18 +135,21 @@ int main()
             scanf(" %[^\n]", imeKriptiraneDatoteke);
             kriptiraniTekst = fopen(imeKriptiraneDatoteke, "r");
 
+            //testiranje postoji li datoteka koju korisnik zeli dekriptirati
             if (kriptiraniTekst == NULL)
                 printf("Uneseno ime datoteke nije valjano. Unesite ponovno.\n");
 
-        } while (kriptiraniTekst == NULL);
+        } while (kriptiraniTekst == NULL); //testiranje postoji li datoteka koju korisnik zeli dekriptirati
 
         do
         {
             printf("Unesi kljuc za dekriptiranje: ");
             scanf("%d", &uneseniKljuc);
+
+            //testrianje jeli uneseni kljuc veci od 0
             if (uneseniKljuc < 0)
                 printf("Uneseni kljuc mora biti pozitivni cijeli broj!\n");
-        } while (uneseniKljuc < 0);
+        } while (uneseniKljuc < 0); //testrianje jeli uneseni kljuc veci od 0
 
         dekriptiranje(kriptiraniTekst, uneseniKljuc, imeKriptiraneDatoteke);
         fclose(kriptiraniTekst);
