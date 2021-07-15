@@ -9,7 +9,7 @@ int main()
         for (j = 1; j <= i; j++)
         {
             if (j == 3)
-                j = 4;
+                continue;
             pom = (double)(j + 2.0f) / (double)(j - 3.0f);
             sum1 += pom;
         }
