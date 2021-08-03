@@ -6,4 +6,5 @@ int main(void)
     printf("Unesi znak: ");
     scanf("%c", &a);
     printf("%d", a ^ 255);
+    return 0;
 }
