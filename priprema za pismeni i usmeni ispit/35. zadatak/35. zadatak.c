@@ -8,5 +8,5 @@ int main(void)
     printf("Unesi omjere prema kojima se dijeli novac (bez znaka ':'): ");
     scanf("%f %f %f", &a, &b, &c);
     printf("Petar ce dobiti %.2f kuna", dobitak * (b / (a + b + c)));
-    return 0;
+    return 0; // kraj programa
 }
