@@ -2,14 +2,13 @@
 
 int main()
 {
-    int n, pom, sum = 0;
+    int n, sum = 0;
     printf("Unesi prirodan broj n: ");
     scanf("%d", &n);
 
     for (int i = 1; i < n; i++)
     {
-        pom = n % i;
-        if (pom == 0)
+        if (n % i == 0)
             sum += i;
     }
 

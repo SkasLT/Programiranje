@@ -4,9 +4,11 @@
 int main()
 {
     int n, exp = 0, pom, sum = 0;
+
     printf("Unesi binarni broj n: ");
     scanf("%d", &n);
     printf("%d(2) = ", n);
+
     while (n > 0)
     {
         pom = n % 10;

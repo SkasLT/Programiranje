@@ -2,17 +2,17 @@
 
 int main()
 {
-    int n, pom1, pom2 = 0;
+    int n, counter = 0;
     printf("Unesi prirodan broj n: ");
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++)
     {
-        pom1 = n % i;
-        if (pom1 == 0)
-            pom2++;
+        if (n % i == 0)
+            counter++;
     }
-    if (pom2 == 2)
+
+    if (counter == 2)
         printf("Broj je prost");
     else
         printf("Broj nije prost");
