@@ -3,7 +3,7 @@
 int main(void)
 {
     float x;
-    int u = 1;
+    int nFaktorijela = 1;
     do
     {
         printf("Unesi broj x: ");
@@ -15,8 +15,8 @@ int main(void)
     } while (x < 1 || x - trunc(x) != 0);
 
     for (int i = 1; i <= x; i++)
-        u *= i;
+        nFaktorijela *= i;
 
-    printf("%d", u);
+    printf("%d", nFaktorijela);
     return 0;
 }

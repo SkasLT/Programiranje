@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <math.h>
 
-int main()
+int main(void)
 {
     int n;
     float sum = 0;
@@ -10,10 +11,12 @@ int main()
 
     for (int i = 1; i <= n; i++)
     {
-        if (i == 3)
-            continue; //continue radi da loop ode nazad na pocetak. Time se postize da se ne racuna suma kad je i == 3
-        sum += (i + 3.5) / (i - 3);
+        if (i == 1 || i % 2 == 1)
+            sum += 1 / pow(i, 2);
+        else
+            sum -= 1 / pow(i, 2);
     }
+
     printf("%.3f", sum);
     return 0;
 }
