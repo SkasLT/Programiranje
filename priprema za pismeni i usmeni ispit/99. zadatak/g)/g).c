@@ -14,7 +14,10 @@ int main()
     n = strlen(a);
 
     for (int i = 0; i < n; i++)
-        printf("%c\n", a[i]);
-
+    {
+        if (i != n && i != 0)
+            printf("*");
+        printf("%c", a[i]);
+    }
     return 0;
 }

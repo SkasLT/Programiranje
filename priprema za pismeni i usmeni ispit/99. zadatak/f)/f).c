@@ -14,7 +14,12 @@ int main()
     n = strlen(a);
 
     for (int i = 0; i < n; i++)
-        printf("%c\n", a[i]);
-
+    {
+        if (isupper(a[i]))
+            a[i] = '#';
+        else if (islower(a[i]))
+            a[i] = '*';
+        printf("%c", a[i]);
+    }
     return 0;
 }

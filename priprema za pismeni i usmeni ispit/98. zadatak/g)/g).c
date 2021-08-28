@@ -7,7 +7,7 @@
 int main()
 {
     char a[MAX + 1];
-    int n, i = 0;
+    int n;
 
     printf("Ucitaj recenicu: ");
     gets(a);
@@ -20,7 +20,7 @@ int main()
     }
     else
     {
-        for (int i = 0; i < (n - 1); i += 2)
+        for (int i = 0; i < n - 1; i += 2)
             printf("%c%c", a[i + 1], a[i]);
         printf("%c", a[n - 1]);
     }

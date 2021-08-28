@@ -13,21 +13,20 @@ int main()
     gets(a);
     n = strlen(a);
 
-    if (n % 2 != 0)
+    if (n % 2 == 0)
     {
-        for (int i = (n / 2 + 1); i < n; i++)
+        for (int i = (n / 2); i < n; i++)
             printf("%c", a[i]);
-        printf("%c", a[n / 2]);
-
         for (int i = 0; i < (n / 2); i++)
             printf("%c", a[i]);
     }
     else
     {
-        for (int i = (n / 2); i < n; i++)
+        for (int i = (n + 1) / 2; i < n; i++)
             printf("%c", a[i]);
+        printf("%c", a[(n - 1) / 2]);
 
-        for (int i = 0; i < (n / 2); i++)
+        for (int i = 0; i < (n - 1) / 2; i++)
             printf("%c", a[i]);
     }
     return 0;

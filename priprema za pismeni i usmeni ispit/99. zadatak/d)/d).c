@@ -7,14 +7,17 @@
 int main()
 {
     char a[MAX + 1];
-    int n;
+    int n, counter = 0;
 
     printf("Ucitaj recenicu: ");
     gets(a);
     n = strlen(a);
 
     for (int i = 0; i < n; i++)
-        printf("%c\n", a[i]);
-
+    {
+        if (isdigit(a[i]))
+            counter++;
+    }
+    printf("%d", counter);
     return 0;
 }
