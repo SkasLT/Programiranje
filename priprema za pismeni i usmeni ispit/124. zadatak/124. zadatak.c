@@ -2,9 +2,10 @@
 
 int Rekurzivna_suma(int n)
 {
-    if (n > 1)
+    if (n == 1)
+        return 1;
+    else
         return Rekurzivna_suma(n - 1) + n;
-    return 1;
 }
 
 int Iterativna_suma(int n)

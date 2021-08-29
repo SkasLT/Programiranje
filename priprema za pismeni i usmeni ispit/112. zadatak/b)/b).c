@@ -36,10 +36,10 @@ int main(void)
         printf("%d. ucenik:\n", i + 1);
 
         printf("Naziv ispita: ");
-        scanf("%s", &studenti[i].nazivIspita);
+        scanf("%s", studenti[i].nazivIspita);
 
         printf("Prezime: ");
-        scanf("%s", &studenti[i].prezime);
+        scanf("%s", studenti[i].prezime);
 
         printf("JMBAG: ");
         scanf("%d", &studenti[i].jmbag);

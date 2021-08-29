@@ -25,7 +25,7 @@ int main(void)
     {
         if (a[j] > max)
             max = a[j];
-        else
+        if (a[j] < min)
             min = a[j];
     }
 

@@ -19,13 +19,15 @@ int main(void)
         scanf("%d", &a[i]);
     }
     max = a[0];
+    min = a[0];
+
     for (int j = 0; j < n; j++)
     {
         if (a[j] > max)
             max = a[j];
-        else
+        if (a[j] < min)
             min = a[j];
     }
-    printf("Max: %d\nMin: %d", max, min);
+    printf("Min %d\nMax: %d", min, max);
     return 0;
 }
