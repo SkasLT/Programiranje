@@ -1,0 +1,45 @@
+#include <stdio.h>
+#define MAX 100
+int main(void)
+{
+    int n, determinanta;
+    int a[MAX][MAX];
+    int b[MAX][MAX];
+    int *pa = &a[0][0];
+    int *pb = &b[0][0];
+
+    printf("Unesi kojeg je reda matrica a: ");
+    scanf("%d", &n);
+
+    printf("Unesi elemete matrice a:\n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("a[%d][%d] = ", i, j);
+            scanf("%d", pa + n * i + j);
+        }
+    }
+
+    if (n == 2)
+    {
+        determinanta = *pa * *(pa + 3) - *(pa + 1) * *(pa + 2); //determinanta = ad - bc; a[2][2] = {{a,b},{c,d}}
+        printf("Determinanta: %d", determinanta);
+    }
+    else
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+                *(pb + n * i + j) = *(pa + n * i + j) + 1;
+        }
+        //ispis matrice b:
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+                printf("%d\t", *(pb + n * i + j));
+            printf("\n");
+        }
+    }
+    return 0;
+}
