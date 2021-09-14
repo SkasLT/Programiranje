@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int n, counter = 0;
-    printf("Unesi prirodan broj n: ");
+    printf("Unesi prirodni cijeli broj: ");
     scanf("%d", &n);
 
     while (n > 0)
     {
-        n /= 10;
         counter++;
+        n /= 10;
     }
-    printf("Broj znamenki unesenog broja: %d", counter);
+    printf("%d", counter);
     return 0;
 }

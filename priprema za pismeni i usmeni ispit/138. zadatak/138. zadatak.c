@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int Max(int *a, int *b)
+int Max(int *pa, int *pb)
 {
-    if (*a >= *b)
-        return *a;
+    if (*pa >= *pb)
+        return *pa;
     else
-        return *b;
-    //return *a * (*a >= *b) + (*b > *a) * *b; big brain
+        return *pb;
+    //return *pa * (*pa >= *pb) + (*pb > *pa) * *pb; big brain
 }
 
 int main(void)

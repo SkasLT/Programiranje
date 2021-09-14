@@ -25,8 +25,6 @@ int main()
     printf("unesi broj: ");
     scanf("%f", &x);
 
-    int c = znanstveniZapis(&x);
-
-    printf("%.3f * 10 ^ %d", x, c);
+    printf("%.3f * 10 ^ %d", x, znanstveniZapis(&x));
     return 0;
 }

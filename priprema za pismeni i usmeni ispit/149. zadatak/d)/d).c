@@ -4,7 +4,6 @@
 
 int main(void)
 {
-    int pom;
     int n;
     do
     {
@@ -20,33 +19,13 @@ int main(void)
     for (int i = 0; i < n; i++)
     {
         printf("a[%d] = ", i);
-        scanf("%d", pa + i); // don't put in "nigga", it breaks things
+        scanf("%d", pa + i);
     }
-
-    /*     for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (*(pa + j) > *(pa + j + 1))
-            {
-                pom = *(pa + j);
-                *(pa + j) = *(pa + j + 1);
-                *(pa + j + 1) = pom;
-            }
-        }
-    } */
 
     int min = *(pa), max = *(pa);
 
-    // 1, 2, 3, 4, 5
-
     for (int i = 0; i < n; i++)
     {
-
-        /*         min = (min > *(pa + i)) * (*(pa + i)) + !(min > *(pa + i)) * min;
-        max = (max < *(pa + i)) * (*(pa + i)) + !(max < *(pa + i)) * max;
-     */
-
         if (min > *(pa + i))
             min = *(pa + i);
 

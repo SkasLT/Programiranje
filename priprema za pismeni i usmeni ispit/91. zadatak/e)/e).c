@@ -12,7 +12,6 @@ int main()
         return 1;
     }
     float a[n];
-    float cPolje[n];
     for (int i = 0; i < n; i++)
     {
         printf("Unesi %d. racionalni broj: ", i + 1);

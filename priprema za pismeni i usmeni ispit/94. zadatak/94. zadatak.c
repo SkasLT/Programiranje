@@ -28,9 +28,7 @@ int main(void)
     }
 
     for (int i = 0; i < n; i++)
-    {
         skalarni_umnozak += a[i] * b[i];
-    }
 
     printf("Vrijednost skalarnog umnoska: %d", skalarni_umnozak);
 

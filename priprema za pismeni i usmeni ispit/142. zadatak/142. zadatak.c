@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void Rastavi(int *pn, int *prez);
+void Rastavi(int n, int *pa, int *pb);
 
 int main(void)
 {
-    int n, rez;
+    int n, a, b;
     do
     {
         printf("Unesi broj n: ");
@@ -13,13 +13,13 @@ int main(void)
             printf("Pogresan unos, unesite ponovo!");
     } while (n < 1000 || n > 9999);
 
-    Rastavi(&n, &rez);
-    printf("1. broj: %d\n2. broj: %d", n, rez);
+    Rastavi(n, &a, &b);
+    printf("1. broj: %d\n2. broj: %d", a, b);
     return 0;
 }
 
-void Rastavi(int *pn, int *prez)
+void Rastavi(int n, int *pa, int *pb)
 {
-    *prez = *pn % 100;
-    *pn /= 100;
+    *pa = n / 100;
+    *pb = n % 100;
 }

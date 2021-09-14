@@ -25,6 +25,7 @@ int main()
     {
         for (int i = (n + 1) / 2; i < n; i++)
             printf("%c", *(px + i));
+
         printf("%c", *(px + (n - 1) / 2));
 
         for (int i = 0; i < (n - 1) / 2; i++)

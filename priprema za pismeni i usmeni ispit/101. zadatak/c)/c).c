@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int n, counter = 0;
-    float sum = 0;
+    int n;
+
     printf("Unesi n: ");
     scanf("%d", &n);
 
@@ -14,7 +14,6 @@ int main(void)
     }
 
     float x[n][n];
-    float y[n];
 
     for (int i = 0; i < n; i++)
     {
@@ -29,25 +28,9 @@ int main(void)
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%.2f  ", x[i][j]);
-            if (i + j == n - 1)
-            {
-                sum += x[i][j];
-                y[counter] = x[i][j];
-                counter++;
-            }
+            if ((x[i][j] > 3) && (j % 2 != 0) && (i >= 2))
+                printf("%.2f", x[i][j]);
         }
-        printf("\n");
-    }
-
-    printf("Suma: ");
-
-    for (int i = 0; i < counter; i++)
-    {
-        if (i != counter - 1)
-            printf("(%.2f) + ", y[i]);
-        else
-            printf("(%.2f) = % .2f", y[i], sum);
     }
     return 0;
 }

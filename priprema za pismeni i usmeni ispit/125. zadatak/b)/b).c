@@ -3,7 +3,7 @@
 double rekurzivna(int x)
 {
     if (x == 1)
-        return 2 / (double)3;
+        return 2 / (float)3;
     else if (x % 2 == 0)
         return rekurzivna(x - 1) - ((2 + 3 * (x - 1)) / (3 + 4 * (float)(x - 1)));
     else

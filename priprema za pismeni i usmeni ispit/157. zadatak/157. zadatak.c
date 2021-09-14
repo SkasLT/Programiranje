@@ -14,9 +14,7 @@ void Upisi(int *px, int n)
 void Ispisi(int *px, int n)
 {
     for (int i = 0; i < n; i++)
-    {
         printf("x[%d] = %d\n", i, *(px + i));
-    }
 }
 
 int Prebroji(int *px, int n)
@@ -35,13 +33,11 @@ int main(void)
 {
     int x[100];
     int n;
-    int counter;
 
     printf("Unesi broj elemenata polja: ");
     scanf("%d", &n);
     Upisi(&x[0], n);
     Ispisi(&x[0], n);
-    counter = Prebroji(&x[0], n);
-    printf("Broj pozitivnih elemenata polja: %d", counter);
+    printf("Broj pozitivnih elemenata polja: %d", Prebroji(&x[0], n));
     return 0;
 }

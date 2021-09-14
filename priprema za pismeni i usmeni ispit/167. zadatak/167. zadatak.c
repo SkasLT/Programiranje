@@ -17,7 +17,6 @@ int JestSigurna(char *px)
 
         if (isprint(*px) && !isalpha(*px) && !isdigit(*px))
             znak = 1;
-
         px++;
     }
     if (slovo && znamenka && znak)

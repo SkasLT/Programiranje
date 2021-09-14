@@ -34,10 +34,6 @@ int main(void)
 
 void Pad(int *px, int n)
 {
-    int umanjitelj = 1;
-    for (int i = 0; i < n; i++)
-    {
-        *(px + i) -= umanjitelj;
-        umanjitelj++;
-    }
+    for (int i = 1; i <= n; i++)
+        *(px + (i - 1)) -= i;
 }

@@ -50,7 +50,7 @@ int main(void)
 
     for (int i = 0; i < *pn; i++)
     {
-        *pskalarni_umnozak += *(pa +i) * *(pb + i);
+        *pskalarni_umnozak += *(pa + i) * *(pb + i);
         *ppom_a += pow(*(pa + i), 2);
         *ppom_b += pow(*(pb + i), 2);
     }

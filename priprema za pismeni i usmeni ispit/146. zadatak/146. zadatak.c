@@ -15,7 +15,7 @@ int main(void)
 void Sekunde(int *psati, int *pminute, int *psekunde)
 {
     *pminute = *psekunde / 60;
-    *psekunde %= 60;
     *psati = *pminute / 60;
     *pminute %= 60;
+    *psekunde %= 60;
 }

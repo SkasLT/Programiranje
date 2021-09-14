@@ -19,7 +19,7 @@ int main(void)
     for (int i = 0; i < n; i++)
     {
         printf("a[%d] = ", i);
-        scanf("%d", pa + i); // don't put in "nigga", it breaks things
+        scanf("%d", pa + i);
     }
 
     for (int i = 0; i < n; i++)

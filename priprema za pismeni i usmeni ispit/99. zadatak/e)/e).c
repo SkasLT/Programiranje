@@ -26,7 +26,7 @@ int main()
         pom--;
     }
 
-    if (uvjet == 1)
+    if (uvjet)
         printf("Je");
     else
         printf("Nije");
