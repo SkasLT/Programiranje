@@ -51,6 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+*.rar
 *.txt
 testiranje
 
