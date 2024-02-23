@@ -14,10 +14,10 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
+        printf("%c", a[i]);
+
         if (((a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u') || (a[i] == 'A') || (a[i] == 'E') || (a[i] == 'I') || (a[i] == 'O') || (a[i] == 'U')) && (i < n - 1))
-            printf("%c-", a[i]);
-        else
-            printf("%c", a[i]);
+            printf("-");
     }
     return 0;
 }

@@ -4,6 +4,7 @@ int main(void)
 {
     int x;
     int brojac = 0;
+    
     printf("Unesi broj: ");
     scanf("%d", &x);
 

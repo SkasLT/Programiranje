@@ -12,12 +12,14 @@ int main(void)
             b[b_counter] = a[i];
             b_counter++;
         }
+        
         if (a[i] % 5 == 0)
         {
             c[c_counter] = a[i];
             c_counter++;
         }
     }
+
     printf("Zadani niz:\n");
     for (int i = 0; i < 10; i++)
         printf("%d ", a[i]);

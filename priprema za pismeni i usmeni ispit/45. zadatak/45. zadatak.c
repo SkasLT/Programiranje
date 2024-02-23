@@ -5,6 +5,7 @@ int main(void)
 {
     int izbor;
     float a;
+    
     printf("Odaberi sto se racuna:\n1 - opseg kvadrata\n2 - povrsina kvadrata\n3 - duljina dijagonale kvadrata\n4 - oplosje tijela koje nastaje rotacijom kvadrata oko dijagonale\nizbor: ");
     scanf("%d", &izbor);
     printf("Unesi duljinu stranice kvadrata: ");

@@ -6,9 +6,9 @@ int main()
 
     printf("Unesi broj kojem se provjeravaju bitovi: ");
     scanf(" %d", &x);
-    printf("Unesi redni broj 1. bita za provjeru: ");
+    printf("Unesi redni broj bita za provjeru: ");
     scanf(" %d", &y);
-    printf("Unesi redni broj 2. bita za provjeru: ");
+    printf("Unesi redni broj bita za provjeru: ");
     scanf(" %d", &z);
 
     printf("Stanje %d. bita je %d\n", y, (x & (1 << (y - 1))) >> (y - 1));

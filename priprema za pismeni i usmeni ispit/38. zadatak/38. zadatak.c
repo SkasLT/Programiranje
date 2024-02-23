@@ -11,5 +11,6 @@ int main(void)
         printf("%d %d %d %d", d, a, b, c);
     else
         printf("%d %d %d %d", b, c, d, a);
+        
     return 0;
 }

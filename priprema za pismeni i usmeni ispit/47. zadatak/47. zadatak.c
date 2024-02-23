@@ -5,6 +5,7 @@ int main()
 {
     int x;
     float rez;
+    
     printf("Unesi racionalni argument funkcije: ");
     scanf("%d", &x);
 
@@ -25,5 +26,6 @@ int main()
     }
     else if (x == 0)
         printf("Funkcija nije definirana za x = 0");
+
     return 0;
 }

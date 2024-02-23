@@ -12,7 +12,9 @@ int main(void)
         char prezime[20 + 1];
         float bodovi;
         int ocjena;
-    } studenti[30];
+    };
+
+    struct veleuciliste_s studenti[20];
 
     do
     {

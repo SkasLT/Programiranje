@@ -18,6 +18,7 @@ int main()
         if (a[i] == '!' || a[i] == '?' || a[i] == '.')
             counter++;
     }
+
     printf("%d", counter);
 
     return 0;

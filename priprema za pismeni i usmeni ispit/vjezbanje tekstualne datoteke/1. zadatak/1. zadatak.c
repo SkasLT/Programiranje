@@ -19,6 +19,7 @@ int main(void)
 
     char c;
     int br = 0;
+
     while ((c = getc(pulaz)) != EOF)
     {
         if (c == ' ')
@@ -26,8 +27,11 @@ int main(void)
         else
             fprintf(pizlaz, "%c", c);
     }
+
     printf("Broj razmaka: %d", br);
+
     fclose(pulaz);
     fclose(pizlaz);
+
     return 0;
 }

@@ -4,6 +4,7 @@ int main(void)
 {
     int b1, b2, n1, n2, bz, nz, br, nr, bu, nu, bk, nk;
     float zbroj, razlika, umnozak, kvocjent;
+    
     printf("Unesi brojnik 1. razlomka: ");
     scanf("%d", &b1);
     printf("Unesi nazivnik 1. razlomka: ");

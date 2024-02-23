@@ -4,7 +4,6 @@
 int main(void)
 {
     int n = 5, g;
-    ;
     int x[n][n];
     int *px = &x[0][0];
 
@@ -18,6 +17,7 @@ int main(void)
             {
                 printf("x[%d][%d] = ", i, j);
                 scanf("%d", px + n * i + j);
+
                 if (*(px + n * i + j) < 0 || *(px + n * i + j) > 255)
                     printf("Pogresan unos. Ponovite unos.\n");
             } while (*(px + n * i + j) < 0 || *(px + n * i + j) > 255);

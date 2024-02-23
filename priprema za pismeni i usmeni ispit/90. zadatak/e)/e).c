@@ -2,7 +2,8 @@
 
 int main(void)
 {
-    int n, min, max;
+    int n, min = 0, max = 0;
+
     do
     {
         printf("Unesi broj elemenata polja: ");
@@ -18,8 +19,6 @@ int main(void)
         printf("Unesi a[%d] = ", i);
         scanf("%d", &a[i]);
     }
-
-    max = a[0];
 
     for (int j = 0; j < n; j++)
     {

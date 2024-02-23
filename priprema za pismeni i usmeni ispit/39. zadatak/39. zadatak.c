@@ -19,5 +19,6 @@ int main(void)
         printf("odlican");
     else
         printf("pogresan unos");
+        
     return 0;
 }

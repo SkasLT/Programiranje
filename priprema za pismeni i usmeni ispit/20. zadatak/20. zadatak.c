@@ -11,7 +11,7 @@ int main(void)
     printf("%d - %d = %d\n", x, y, x - y);
     printf("%d * %d = %d\n", x, y, x * y);
     printf("%d : %d = %.3f\n", x, y, x / (float)y);
-    printf("%d %% %d = %d\n", x, y, x % y);
+    printf("%d %c %d = %d\n", x, y, x % y);
     printf("%d / %d = %d\n", x, y, x / y);
     return 0;
 }

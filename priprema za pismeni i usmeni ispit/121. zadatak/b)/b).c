@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char PretvoriMalo(char c)
+char pretvoriMalo(char c)
 {
     if (c >= 65 && c <= 90)
         c += 32;
@@ -10,6 +10,6 @@ char PretvoriMalo(char c)
 int main(void)
 {
     for (int i = 67; i <= 84; i++)
-        printf("%c  ", PretvoriMalo(i));
+        printf("%c  ", pretvoriMalo(i));
     return 0;
 }

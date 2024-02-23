@@ -15,9 +15,10 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (i != n && i != 0)
-            printf("*");
         printf("%c", a[i]);
+
+        if (i < (n - 1))
+            printf("*");
     }
     return 0;
 }

@@ -3,8 +3,10 @@
 int main()
 {
     int N, X, pom;
+    
     printf("Unesi broj ostvarenih bodova na ispitu: ");
     scanf("%d", &N);
+
     if (N < 45)
     {
         pom = 1;
@@ -44,5 +46,6 @@ int main()
         printf("Za ocenu 5 falilo je %d bodova", 90 - N);
     else
         printf("JASMINKA");
+
     return 0;
 }

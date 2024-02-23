@@ -11,6 +11,7 @@ int main()
         printf("Pogresan unos, kraj programa\n");
         return 1;
     }
+    
     float a[n];
     int cPolje[n];
 

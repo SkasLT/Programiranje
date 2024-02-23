@@ -4,6 +4,7 @@ int main(void)
 {
     int x, y;
     char operator;
+
     printf("Unesi 2 broja i njihov operator (+, -, *, /, d, m): ");
     scanf("%d %c %d", &x, &operator, & y);
 

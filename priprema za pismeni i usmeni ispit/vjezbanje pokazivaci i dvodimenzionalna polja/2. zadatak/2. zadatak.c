@@ -30,6 +30,7 @@ int main(void)
             scanf("%f", px + r * i + j);
         }
     }
+
     printf("Prije poziva:\n");
     Ispis(&x[0][0], r, s);
     Umanji(&x[0][0], r, s);
@@ -44,7 +45,7 @@ void Ispis(float *px, int r1, int s1)
     for (int i = 0; i < r1; i++)
     {
         for (int j = 0; j < s1; j++)
-            printf("%.3f\t", *(px + r1 * i + j));
+            printf("%.3f\t", *(px + s1 * i + j));
         printf("\n");
     }
 }

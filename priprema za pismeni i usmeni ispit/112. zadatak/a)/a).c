@@ -36,7 +36,7 @@ int main(void)
         printf("%d. ucenik:\n", i + 1);
 
         printf("Naziv ispita: ");
-        scanf("%s", studenti[i].nazivIspita);
+        scanf(" %c", studenti[i].nazivIspita);
 
         printf("Prezime: ");
         scanf("%s", studenti[i].prezime);

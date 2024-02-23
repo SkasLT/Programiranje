@@ -3,6 +3,7 @@
 int main(void)
 {
     int godina;
+
     printf("Unesi godinu: ");
     scanf("%d", &godina);
 
@@ -11,8 +12,12 @@ int main(void)
         printf("Pogresan unos");
         return 1;
     }
-    else
+
+    else if (godina % 10 != 0)
         printf("%d. stoljece", godina / 100 + 1);
+
+    else
+        printf("%d. stoljece", godina / 100);
 
     return 0;
 }

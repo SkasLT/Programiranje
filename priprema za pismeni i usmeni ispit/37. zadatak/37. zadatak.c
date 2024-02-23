@@ -2,16 +2,17 @@
 
 int main(void)
 {
-    int x;
-    printf("Unesi prethodni broj: ");
-    scanf("%d", &x);
+    int x, y;
 
-    x += 1;
+    printf("Unesi predzadnji i zadnji broj: ");
+    scanf("%d %d", &x, &y);
 
-    if (x == 101)
+    y += 1;
+
+    if (y == 101)
         printf("1");
     else
-        printf("%d", x);
+        printf("%d", y);
 
     return 0;
 }

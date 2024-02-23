@@ -23,5 +23,6 @@ int main(void)
         printf("Iznimno vruce");
     else
         printf("Pogresan unos");
+        
     return 0;
 }

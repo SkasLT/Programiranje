@@ -3,11 +3,13 @@
 int Broji(int n)
 {
     int counter = 0;
+
     while (n > 0)
     {
-        n /= 10;
+        n = n / 10;
         counter++;
     }
+
     return counter;
 }
 
@@ -21,6 +23,7 @@ int Zadnja(int n)
 void Okreni(int n)
 {
     printf("Inverzni zapis: ");
+
     if (n == 0)
         printf("0");
 

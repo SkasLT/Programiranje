@@ -18,6 +18,7 @@ int main()
         if (isdigit(a[i]))
             counter++;
     }
+
     printf("%d", counter);
     return 0;
 }

@@ -3,6 +3,7 @@
 int main(void)
 {
     int TL, KL, X, Y, Z;
+    
     printf("Unesi koliko je trajao let od Zagreba do Beca: ");
     scanf("%d", &TL);
 

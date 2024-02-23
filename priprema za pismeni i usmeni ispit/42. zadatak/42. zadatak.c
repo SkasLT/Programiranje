@@ -3,6 +3,7 @@
 int main(void)
 {
     int ikz;
+    
     printf("Unesi indeks kakavoce zraka: ");
     scanf("%d", &ikz);
 
@@ -20,5 +21,6 @@ int main(void)
         printf("Opasan zrak");
     else
         printf("Pograsan unos");
+
     return 0;
 }

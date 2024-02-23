@@ -4,6 +4,7 @@ int main(void)
 {
     int x;
     float pom;
+
     printf("Unesi cijelobrojni argument funkcije: ");
     scanf("%d", &x);
 
@@ -14,10 +15,11 @@ int main(void)
         pom = x - 2;
 
         if (pom < 0)
-            pom *= (-1);
+            pom = pom * (-1);
 
         printf("f(%d) = %.2f", x, pom + 1 / (float)x);
         return 0;
     }
+    
     return 1;
 }

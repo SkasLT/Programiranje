@@ -2,12 +2,16 @@
 
 int main(void)
 {
-    float n;
+    int n;
+
     printf("Unesi zaradzeni novac: ");
-    scanf("%f", &n);
+    scanf("%d", &n);
+
     n = n - n / 5;
     n = n - n / 5;
     n = n - n / 5;
-    printf("Marku je ostalo %.0f kuna", n);
+
+    printf("Marku je ostalo %d kuna", n);
+
     return 0;
 }

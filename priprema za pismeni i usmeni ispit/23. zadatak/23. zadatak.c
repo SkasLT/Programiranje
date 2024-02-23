@@ -2,9 +2,12 @@
 
 int main(void)
 {
-    char a;
+    char c;
+
     printf("Unesi znak: ");
-    scanf("%c", &a);
-    printf("%d", a ^ 255);
+    scanf("%c", &c);
+
+    printf("Invertiranjem vrijednosti %d (ASCII vrijednost znaka %c) dobije se: %d", c, c, c ^ 255);
+
     return 0;
 }

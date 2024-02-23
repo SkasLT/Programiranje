@@ -22,6 +22,7 @@ int main()
     {
         for (int i = 0; i < n - 1; i += 2)
             printf("%c%c", a[i + 1], a[i]);
+            
         printf("%c", a[n - 1]);
     }
     return 0;

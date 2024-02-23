@@ -2,7 +2,7 @@
 
 int main()
 {
-    int x, y, z;
+    int x, y;
 
     printf("Unesi broj kojem se provjeravaju bitovi: ");
     scanf(" %d", &x);

@@ -8,9 +8,9 @@ int main()
     printf("Unesi 3 decimalna broja: ");
     scanf("%f %f %f", &a, &b, &c);
 
-    deca = a - trunc(a);
-    decb = b - trunc(b);
-    decc = c - trunc(c);
+    deca = a - (int)a;
+    decb = b - (int)b;
+    decc = c - (int)c;
 
     if (deca > decb && deca > decc)
         printf("Najveci decimalni dio je: %.3f\n%.0f", deca, round(a));
